@@ -11,6 +11,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 
 const routes: Routes = [
   { path: 'catalog', component: CatalogComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
     AppComponent,
     Page01Component,
     SidebarComponent,
-    CatalogComponent
+    CatalogComponent,
+    MovieCardComponent
 
   ],
   imports: [

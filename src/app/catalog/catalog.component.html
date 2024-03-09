@@ -1,5 +1,6 @@
 <h1>Catalog</h1>
 
-<div *ngFor="let movie of movies.results">
-  <p>{{ movie.title }}</p>
+<div class="grid">
+  <app-movie-card *ngFor="let movie of movies.results" [movie]="movie" />
 </div>
+
