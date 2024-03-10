@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class MoviesService {
       {
         params: { order_by: 'date', type: 'movie' },
         headers: {
-          'X-RapidAPI-Key': '17d09e67femsh13a073e9704fd50p186213jsn515337c5cc37',
+          'X-RapidAPI-Key': environment.apiKey,
           'X-RapidAPI-Host': 'unogs-unogs-v1.p.rapidapi.com'
         },
       }
