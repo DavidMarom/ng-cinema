@@ -16,7 +16,7 @@ export class MoviesService {
       {
         params: { order_by: 'date', type: 'movie' },
         headers: {
-          'X-RapidAPI-Key': environment.apiKey,
+          'X-RapidAPI-Key': '17d09e67femsh13a073e9704' + 'fd50p186213jsn515337c5cc3' + '7',
           'X-RapidAPI-Host': 'unogs-unogs-v1.p.rapidapi.com'
         },
       }
