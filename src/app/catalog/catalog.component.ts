@@ -8,7 +8,7 @@ import { MoviesService } from '../services/movies.service';
 })
 export class CatalogComponent {
   constructor(private moviesService: MoviesService) { }
-  public movies: any;
+  public movies: any = {};
   ngOnInit(): void {
     this.movies = localStorage.getItem('movies');
     if (!this.movies) {
