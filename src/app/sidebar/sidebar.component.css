@@ -7,3 +7,8 @@
     background-color: #cce1f7;
     padding: 10px;
 }
+
+.active{
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,4 +1,6 @@
 <div class="sidebar">
-  <a routerLink="">Home</a>
-  <a routerLink="/catalog">Catalog</a>
+  <!-- <a routerLink="">Home</a>
+  <a routerLink="/catalog">Catalog</a> -->
+  <button [ngClass]="{active: navService.page === ''}" (click)="goToPage('')">Home</button>
+  <button [ngClass]="{active: navService.page === 'catalog'}" (click)="goToPage('catalog')">Catalog</button>
 </div>
