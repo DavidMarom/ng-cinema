@@ -1,4 +1,6 @@
 <div class="container">
   <p>{{ movie.title }}</p>
+  <p>Count: {{ count$ | async }}</p>
+  <button (click)="increment()">Increment</button>
   <img [src]="movie.img" alt="{{ movie.title }}" />
 </div>
